@@ -7,19 +7,19 @@
         <meta name="description" content="My first web page assignment for CIS 128 at CSM."/>
         <title>Stacy Lau</title>
         <link rel="stylesheet" type="text/css" href="css/main1A.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="jquery-color-master/jquery.color.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    var div = $(".header__title");
+                    div.animate({fontSize: '7em',}, "slow");
+                    div.animate({fontSize: '5em', color: '#ff0000'}, "slow");
+                    $("img").css('border', "solid .6em #00f");
+                    });
+            };
+        </script>
     </head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="jquery-color-master/jquery.color.js"></script>
-    <script>
-    $(document).ready(function(){
-        $("button").click(function(){
-            var div = $(".header__title");
-            div.animate({fontSize: '7em',}, "slow");
-            div.animate({fontSize: '5em', color: '#ff0000'}, "slow");
-            $("img").css('border', "solid .6em #00f");
-            });
-        });
-    </script>
     <body>
         <div class="container">
             <header class="header">
