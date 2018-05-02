@@ -1,0 +1,58 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* unvisited link */
+a:link {
+    color: blue;
+}
+
+/* visited link */
+a:visited {
+    color: red;
+}
+
+/* mouse over link */
+a:hover {
+    color: purple;
+}
+
+/* selected link */
+a:active {
+    color: green;
+}
+
+p {
+    margin: 20px;
+}
+
+#location {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#map {
+    width: 800px;
+    height: 400px;
+}
+
+/* for 800px or less */
+@media screen and (min-width: 800px) {
+    .container {
+        width: 100%;
+        float: none;
+    }
+}
+
+/* for 799px or less */
+@media screen and (max-width: 799px) {
+    .container {
+        width: auto;
+        float: none;
+    }
+    #map {
+        width: auto;
+        float: none;
+    }
+}
